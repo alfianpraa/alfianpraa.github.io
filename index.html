@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alfian Pratama — AI Programmer</title>
+  <meta name="description" content="AI Programmer portfolio — Python, FastAPI, Flask, Computer Vision, MySQL" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --accent: 32 94 236; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .container { max-width: 1100px; }
+    .glass { backdrop-filter: blur(10px); background: rgba(15, 23, 42, 0.6); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-950/70 glass">
+    <nav class="container mx-auto px-5 py-3 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight">Alfian Pratama</a>
+      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-800 px-3 py-2">Menu</button>
+      <ul id="menu" class="hidden md:flex gap-6 text-sm">
+        <li><a class="hover:text-sky-400" href="#about">About</a></li>
+        <li><a class="hover:text-sky-400" href="#projects">Projects</a></li>
+        <li><a class="hover:text-sky-400" href="#experience">Experience</a></li>
+        <li><a class="hover:text-sky-400" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="container mx-auto px-5 pt-12 pb-8 md:pt-20 md:pb-14">
+    <div class="grid md:grid-cols-5 gap-8 items-center">
+      <div class="md:col-span-3">
+        <span class="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900 px-3 py-1 text-xs text-slate-300">Available for opportunities</span>
+        <h1 class="mt-4 text-3xl md:text-5xl font-bold leading-tight">AI Programmer — Python · FastAPI · Flask · Computer Vision</h1>
+        <p class="mt-4 text-slate-300 md:text-lg">Builds AI-powered web applications and computer-vision systems: people counting, vehicle counting, and face-recognition attendance using CCTV. Focused on robust, scalable backends and clean UI for reporting.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#projects" class="rounded-xl bg-sky-500 px-5 py-3 font-medium text-white hover:bg-sky-400">View Projects</a>
+          <a href="#contact" class="rounded-xl border border-slate-700 px-5 py-3 font-medium hover:border-slate-500">Contact</a>
+        </div>
+      </div>
+      <div class="md:col-span-2">
+        <div class="rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 p-5">
+          <div class="aspect-[4/3] rounded-xl bg-slate-900/60 border border-slate-800 flex items-center justify-center text-slate-400">Your Photo / Logo</div>
+          <ul class="mt-5 grid grid-cols-2 gap-3 text-sm">
+            <li class="rounded-lg border border-slate-800 bg-slate-900 p-3"><span class="text-slate-400">Stack</span><br><span class="font-medium">Python, FastAPI, Flask</span></li>
+            <li class="rounded-lg border border-slate-800 bg-slate-900 p-3"><span class="text-slate-400">DB</span><br><span class="font-medium">MySQL</span></li>
+            <li class="rounded-lg border border-slate-800 bg-slate-900 p-3"><span class="text-slate-400">AI</span><br><span class="font-medium">CV · ML/DL</span></li>
+            <li class="rounded-lg border border-slate-800 bg-slate-900 p-3"><span class="text-slate-400">Location</span><br><span class="font-medium">Jakarta, ID</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container mx-auto px-5 py-12 md:py-16 border-t border-b border-slate-800/50 bg-slate-950/60">
+    <div class="grid md:grid-cols-3 gap-10 items-start">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold">About</h2>
+        <p class="mt-3 text-slate-300">AI Programmer with expertise in Python, FastAPI/Flask, MySQL, and computer vision. Comfortable turning business needs into production-ready AI systems and dashboards.</p>
+      </div>
+      <div class="md:col-span-2 grid sm:grid-cols-2 gap-4">
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+          <h3 class="font-medium">Core Skills</h3>
+          <p class="mt-2 text-sm text-slate-300">Python · FastAPI · Flask · MySQL · Computer Vision · Machine Learning · Data Science · REST API · Docker (basic) · Git</p>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-4">
+          <h3 class="font-medium">Highlights</h3>
+          <ul class="mt-2 text-sm text-slate-300 list-disc list-inside space-y-1">
+            <li>People Counting (with gender classification)</li>
+            <li>Vehicle Counting & Traffic Monitoring</li>
+            <li>Face Recognition Attendance (CCTV)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container mx-auto px-5 py-12 md:py-16">
+    <div class="flex items-end justify-between gap-4">
+      <h2 class="text-2xl md:text-3xl font-semibold">Projects</h2>
+      <a href="https://github.com/" target="_blank" class="text-sm text-sky-400 hover:underline">See all on GitHub →</a>
+    </div>
+
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <!-- Card 1: People Counting -->
+      <article class="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden">
+        <div class="aspect-video bg-slate-800/60 flex items-center justify-center text-slate-400">Project Cover</div>
+        <div class="p-5">
+          <h3 class="font-semibold">People Counting & Gender Analytics</h3>
+          <p class="mt-2 text-sm text-slate-300">Real-time counting from CCTV with gender classification, ROI-based tracking, and dashboard (hourly/weekly/monthly).</p>
+          <div class="mt-4 flex gap-2 text-xs text-slate-400">
+            <span class="rounded border border-slate-700 px-2 py-1">Python</span>
+            <span class="rounded border border-slate-700 px-2 py-1">FastAPI</span>
+            <span class="rounded border border-slate-700 px-2 py-1">MySQL</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sky-400 text-sm hover:underline" href="#">Live / Demo</a>
+            <a class="text-sky-400 text-sm hover:underline" href="#">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2: Vehicle Counting -->
+      <article class="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden">
+        <div class="aspect-video bg-slate-800/60 flex items-center justify-center text-slate-400">Project Cover</div>
+        <div class="p-5">
+          <h3 class="font-semibold">Vehicle Counting & Traffic Monitoring</h3>
+          <p class="mt-2 text-sm text-slate-300">Object detection + tracking for vehicles, lane ROI, per-class stats (car, bus, truck), and alert integration.</p>
+          <div class="mt-4 flex gap-2 text-xs text-slate-400">
+            <span class="rounded border border-slate-700 px-2 py-1">Python</span>
+            <span class="rounded border border-slate-700 px-2 py-1">FastAPI</span>
+            <span class="rounded border border-slate-700 px-2 py-1">MySQL</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sky-400 text-sm hover:underline" href="#">Live / Demo</a>
+            <a class="text-sky-400 text-sm hover:underline" href="#">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3: Face Attendance -->
+      <article class="rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden">
+        <div class="aspect-video bg-slate-800/60 flex items-center justify-center text-slate-400">Project Cover</div>
+        <div class="p-5">
+          <h3 class="font-semibold">Face Recognition Attendance (CCTV)</h3>
+          <p class="mt-2 text-sm text-slate-300">Attendance system using ArcFace embeddings, liveness checks, and web dashboard for export & auditing.</p>
+          <div class="mt-4 flex gap-2 text-xs text-slate-400">
+            <span class="rounded border border-slate-700 px-2 py-1">Python</span>
+            <span class="rounded border border-slate-700 px-2 py-1">Flask</span>
+            <span class="rounded border border-slate-700 px-2 py-1">MySQL</span>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="text-sky-400 text-sm hover:underline" href="#">Live / Demo</a>
+            <a class="text-sky-400 text-sm hover:underline" href="#">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="container mx-auto px-5 py-12 md:py-16 border-t border-b border-slate-800/50 bg-slate-950/60">
+    <h2 class="text-2xl md:text-3xl font-semibold">Experience</h2>
+    <div class="mt-6 space-y-6">
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold">AI Programmer — PT. Indovisual Presentatama</h3>
+          <span class="text-sm text-slate-400">Jun 2025 – Present · Jakarta</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-300">Engineered AI web apps (FastAPI/Flask) and computer-vision systems (people/vehicle counting, face attendance). Designed MySQL schemas and dashboards.</p>
+      </div>
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold">Junior System Analyst — University of Indonesia</h3>
+          <span class="text-sm text-slate-400">Apr 2024 – Sep 2024 · Depok</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-300">Analyzed requirements, prepared system diagrams (use case, flow, ERD, sequence), and supported Flutter + MySQL development and testing.</p>
+      </div>
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold">Data Science & AI — Telkom Indonesia (Internship)</h3>
+          <span class="text-sm text-slate-400">Apr 2023 – Sep 2023 · Jakarta</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-300">Worked on data analysis, scraping, and AI concept presentations; supported reporting and RPA/automation initiatives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto px-5 py-12 md:py-16">
+    <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6 md:p-10">
+      <h2 class="text-2xl md:text-3xl font-semibold">Contact</h2>
+      <p class="mt-2 text-slate-300">Open to freelance and full-time opportunities. Feel free to reach out:</p>
+      <div class="mt-5 grid sm:grid-cols-3 gap-4 text-sm">
+        <a href="mailto:your.email@example.com" class="rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 hover:border-slate-500">your.email@example.com</a>
+        <a href="https://linkedin.com/in/your-username" target="_blank" class="rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 hover:border-slate-500">LinkedIn</a>
+        <a href="https://github.com/your-username" target="_blank" class="rounded-lg border border-slate-700 bg-slate-800 px-4 py-3 hover:border-slate-500">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-xs text-slate-500">© <span id="y"></span> Alfian Pratama — Built with Tailwind CSS</footer>
+
+  <script>
+    // mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
